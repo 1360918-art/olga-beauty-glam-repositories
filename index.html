@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Maquiagem, cuidados capilares e cursos profissionalizantes da Beauty Olga Glam.">
+  <title>Beauty Olga Glam | Maquiagem, cabelo e cursos</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="inicio">
+  <svg class="biblioteca-icones" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="brilho" viewBox="0 0 24 24"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /><path d="M20 2v4" /><path d="M22 4h-4" /><circle cx="4" cy="20" r="2" /></symbol>
+    <symbol id="carrinho" viewBox="0 0 24 24"><circle cx="8" cy="21" r="1" /><circle cx="19" cy="21" r="1" /><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></symbol>
+    <symbol id="estrela" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /></symbol>
+    <symbol id="seta" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol>
+    <symbol id="menu" viewBox="0 0 24 24"><path d="M4 5h16" /><path d="M4 12h16" /><path d="M4 19h16" /></symbol>
+    <symbol id="fechar" viewBox="0 0 24 24"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></symbol>
+    <symbol id="mensagem" viewBox="0 0 24 24"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></symbol>
+    <symbol id="livro" viewBox="0 0 24 24"><path d="M12 7v14" /><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" /></symbol>
+    <symbol id="marca" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol>
+    <symbol id="coracao" viewBox="0 0 24 24"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /></symbol>
+    <symbol id="mais" viewBox="0 0 24 24"><path d="M5 12h14" /><path d="M12 5v14" /></symbol>
+    <symbol id="menos" viewBox="0 0 24 24"><path d="M5 12h14" /></symbol>
+  </svg>
+  <a href="#conteudo" class="atalho">Ir para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="conteiner barra-navegacao">
+      <a class="marca" href="#inicio">
+        <span class="simbolo-marca"><svg class="icone" aria-hidden="true"><use href="#brilho"></use></svg></span>
+        <span>Beauty Olga <span class="dourado">Glam</span></span>
+      </a>
+      <nav id="navegacao" class="navegacao" aria-label="Navegação principal">
+        <a href="#produtos">Produtos</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a class="botao botao-whatsapp contato-menu" data-whatsapp>WhatsApp</a>
+      </nav>
+      <div class="acoes-cabecalho">
+        <button type="button" class="botao-icone abrir-carrinho" id="abrir-carrinho" aria-label="Abrir carrinho de compras" aria-haspopup="dialog">
+          <svg class="icone" aria-hidden="true"><use href="#carrinho"></use></svg>
+          <span id="quantidade-carrinho" class="quantidade-carrinho" hidden>0</span>
+        </button>
+        <a class="botao botao-whatsapp contato-cabecalho" data-whatsapp>
+          <svg class="icone" aria-hidden="true"><use href="#mensagem"></use></svg> WhatsApp
+        </a>
+        <button type="button" class="botao-icone botao-menu" id="botao-menu" aria-label="Abrir menu" aria-controls="navegacao" aria-expanded="false">
+          <svg class="icone" aria-hidden="true"><use href="#menu"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="apresentacao" aria-labelledby="titulo-principal">
+      <div class="foto-apresentacao">
+        <img src="recursos/capa.jpg" alt="Pincéis de maquiagem em tom rosa e marrom" width="900" height="900" fetchpriority="high">
+      </div>
+      <div class="conteiner">
+        <div class="texto-apresentacao">
+          <p class="selo-apresentacao"><svg class="icone" aria-hidden="true"><use href="#brilho"></use></svg> Beleza que transforma</p>
+          <h1 id="titulo-principal">Sua beleza <span class="destaque-principal">começa</span> <span class="dourado">aqui</span></h1>
+          <p class="descricao-apresentacao">Produtos premium de maquiagem e cuidados capilares, além de cursos profissionalizantes para você arrasar em qualquer ocasião.</p>
+          <div class="acoes-apresentacao">
+            <a class="botao botao-rosa" href="#produtos">Ver Produtos <svg class="icone" aria-hidden="true"><use href="#seta"></use></svg></a>
+            <a class="botao botao-contorno-dourado" href="#cursos"><svg class="icone" aria-hidden="true"><use href="#livro"></use></svg> Nossos Cursos</a>
+          </div>
+          <ul class="indicadores">
+            <li><strong>5.000+</strong><span>Clientes satisfeitas</span></li>
+            <li><strong>200+</strong><span>Produtos disponíveis</span></li>
+            <li><strong>2 cursos</strong><span>Com certificado</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao conteiner" aria-labelledby="titulo-categorias">
+      <header class="cabecalho-secao">
+        <p class="sobretitulo">Explore</p>
+        <h2 id="titulo-categorias">Nossas Categorias</h2>
+        <div class="divisor-dourado" aria-hidden="true"><svg class="icone"><use href="#brilho"></use></svg></div>
+      </header>
+      <div class="grade-dupla">
+        <a href="#produtos" class="cartao-categoria" data-categoria="maquiagem">
+          <img src="recursos/categoria-maquiagem.jpg" alt="" width="700" height="400" loading="lazy">
+          <div class="legenda-foto"><p>Coleção completa</p><h3>Maquiagem</h3><span>Explorar <svg class="icone" aria-hidden="true"><use href="#seta"></use></svg></span></div>
+        </a>
+        <a href="#produtos" class="cartao-categoria" data-categoria="cabelo">
+          <img src="recursos/categoria-cabelo.jpg" alt="" width="700" height="400" loading="lazy">
+          <div class="legenda-foto"><p>Linha premium</p><h3>Cabelo</h3><span>Explorar <svg class="icone" aria-hidden="true"><use href="#seta"></use></svg></span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="secao fundo-suave" id="produtos" aria-labelledby="titulo-produtos">
+      <div class="conteiner">
+        <header class="cabecalho-secao">
+          <p class="sobretitulo">Nossa Loja</p>
+          <h2 id="titulo-produtos">Produtos em Destaque</h2>
+          <div class="divisor-dourado" aria-hidden="true"><svg class="icone"><use href="#brilho"></use></svg></div>
+          <p>Selecionamos os melhores produtos para realçar sua beleza natural.</p>
+        </header>
+        <div class="filtros" role="group" aria-label="Categorias de produtos">
+          <button type="button" data-categoria="maquiagem" aria-pressed="true" aria-controls="lista-produtos">Maquiagem</button>
+          <button type="button" data-categoria="cabelo" aria-pressed="false" aria-controls="lista-produtos">Cabelo</button>
+        </div>
+        <div id="lista-produtos" class="grade-produtos"></div>
+        <noscript><p>Ative o JavaScript para usar o catálogo interativo.</p></noscript>
+        <div class="acao-secao"><a class="botao botao-contorno-rosa" data-whatsapp><svg class="icone" aria-hidden="true"><use href="#mensagem"></use></svg> Ver catálogo completo no WhatsApp</a></div>
+      </div>
+    </section>
+
+    <section class="secao conteiner" id="cursos" aria-labelledby="titulo-cursos">
+      <header class="cabecalho-secao">
+        <p class="sobretitulo">Aprenda com especialistas</p>
+        <h2 id="titulo-cursos">Nossos Cursos</h2>
+        <div class="divisor-dourado" aria-hidden="true"><svg class="icone"><use href="#brilho"></use></svg></div>
+        <p>Transforme sua paixão por beleza em profissão com cursos completos e certificados.</p>
+      </header>
+      <div id="lista-cursos" class="grade-dupla"></div>
+    </section>
+
+    <section class="secao fundo-suave" id="resultados" aria-labelledby="titulo-resultados">
+      <div class="conteiner">
+        <header class="cabecalho-secao">
+          <p class="sobretitulo">Transformações reais</p>
+          <h2 id="titulo-resultados">Veja os Resultados</h2>
+          <div class="divisor-dourado" aria-hidden="true"><svg class="icone"><use href="#brilho"></use></svg></div>
+          <p>Veja como nossos produtos e cursos transformam a beleza das nossas clientes.</p>
+        </header>
+        <div class="grade-tripla">
+          <article class="cartao-resultado">
+            <img src="recursos/resultado-maquiagem.jpg" alt="Make profissional" width="600" height="700" loading="lazy">
+            <div class="legenda-foto"><p>Técnicas aprendidas no curso</p><h3>Make Profissional</h3></div>
+          </article>
+          <article class="cartao-resultado">
+            <img src="recursos/resultado-capilar.jpg" alt="Transformação capilar" width="600" height="700" loading="lazy">
+            <div class="legenda-foto"><p>Resultado com nossa linha premium</p><h3>Transformação Capilar</h3></div>
+          </article>
+          <article class="cartao-resultado">
+            <img src="recursos/resultado-look.jpg" alt="Look completo" width="600" height="700" loading="lazy">
+            <div class="legenda-foto"><p>Usando produtos da loja</p><h3>Look Completo</h3></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao conteiner" id="depoimentos" aria-labelledby="titulo-depoimentos">
+      <header class="cabecalho-secao">
+        <p class="sobretitulo">Quem já comprou</p>
+        <h2 id="titulo-depoimentos">Depoimentos</h2>
+        <div class="divisor-dourado" aria-hidden="true"><svg class="icone"><use href="#brilho"></use></svg></div>
+        <p>O que nossas clientes falam sobre os produtos e cursos.</p>
+      </header>
+      <div id="lista-depoimentos" class="grade-tripla"></div>
+    </section>
+
+    <section class="secao secao-contato" aria-labelledby="titulo-contato">
+      <div class="conteiner">
+        <header class="cabecalho-secao">
+          <span class="simbolo-contato"><svg class="icone" aria-hidden="true"><use href="#mensagem"></use></svg></span>
+          <p class="sobretitulo">Atendimento personalizado</p>
+          <h2 id="titulo-contato">Fale Conosco pelo <span>WhatsApp</span></h2>
+          <p>Dúvidas sobre produtos, pedidos ou cursos? Nossa equipe está pronta para te atender de segunda a sábado, das 8h às 20h.</p>
+        </header>
+        <a class="botao botao-whatsapp" data-whatsapp><svg class="icone" aria-hidden="true"><use href="#mensagem"></use></svg> Chamar no WhatsApp</a>
+        <p class="nota-contato">Resposta em até 5 minutos no horário de atendimento</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="conteiner">
+      <div class="grade-rodape">
+        <div>
+          <a class="marca" href="#inicio">
+            <span class="simbolo-marca"><svg class="icone" aria-hidden="true"><use href="#brilho"></use></svg></span>
+            <span>Beauty Olga <span class="dourado">Glam</span></span>
+          </a>
+          <p>Sua loja de beleza completa com produtos premium e cursos profissionalizantes para todas as mulheres.</p>
+          <a class="botao-icone rede-social" data-whatsapp aria-label="Beauty Olga Glam no WhatsApp"><svg class="icone" aria-hidden="true"><use href="#mensagem"></use></svg></a>
+        </div>
+        <div>
+          <h2>Loja</h2>
+          <ul>
+            <li><a href="#produtos" data-categoria="maquiagem">Maquiagem</a></li>
+            <li><a href="#produtos" data-categoria="cabelo">Cabelo</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <ul><li><a data-whatsapp>WhatsApp</a></li><li>Seg–Sáb: 8h às 20h</li></ul>
+        </div>
+      </div>
+      <div class="rodape-final">
+        <p>© 2024 Beauty Olga Glam. Todos os direitos reservados.</p>
+        <p>Feito com <span class="dourado">♥</span> para realçar sua beleza</p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="janela-carrinho" class="janela-carrinho" aria-labelledby="titulo-carrinho">
+    <header class="cabecalho-carrinho">
+      <h2 id="titulo-carrinho">Seu carrinho</h2>
+      <form method="dialog"><button class="botao-icone" aria-label="Fechar carrinho" autofocus><svg class="icone" aria-hidden="true"><use href="#fechar"></use></svg></button></form>
+    </header>
+    <div id="itens-carrinho" class="itens-carrinho"></div>
+    <div id="resumo-carrinho" class="resumo-carrinho" hidden>
+      <p><strong>Subtotal</strong><strong id="subtotal-carrinho"></strong></p>
+      <a id="enviar-pedido" class="botao botao-whatsapp" target="_blank" rel="noopener noreferrer"><svg class="icone" aria-hidden="true"><use href="#mensagem"></use></svg> Consultar pedido no WhatsApp</a>
+    </div>
+  </dialog>
+  <p id="aviso-loja" class="somente-leitor" role="status"></p>
+</body>
+</html>
